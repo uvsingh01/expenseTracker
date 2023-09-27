@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Expense Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>My Expense Tracker</h1>
+    </header>
+    <section class="container">
+        <section class="expenses">
+            <h2>Expenses</h2>
+            <ul id="expense-list"></ul>
+            <p>Total Expenses:₹ <span id="total-expenses">0.00</span></p>
+        </section>
+        <section class="add-expense">
+            <h2>Add New Expense</h2>
+            <form id="expense-form">
+                <input type="text" id="expense-name" placeholder="Expense Name" required>
+                <input type="number" id="expense-amount" placeholder="Amount" step="0.01" required>
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
